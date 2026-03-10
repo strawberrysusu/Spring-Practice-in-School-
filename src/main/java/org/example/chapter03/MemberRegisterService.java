@@ -23,5 +23,8 @@ public class MemberRegisterService {
         // Member 생성자 순서는 name, password, email 이다.
         Member newMember = new Member(req.getName(), req.getPassword(), req.getEmail(), LocalDateTime.now());
         memberDao.insert(newMember);
+
+
+
     }
 }
